@@ -182,6 +182,10 @@ public class Users {
         this.dataNascimento = dataNascimento;
     }
 
+    public void getDiaDataNascimento(LocalDate dataNascimento){
+
+    }
+
     public Character getSexo() {
         return sexo;
     }

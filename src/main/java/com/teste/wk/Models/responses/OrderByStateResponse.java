@@ -1,15 +1,15 @@
-package com.teste.wk.Models.requests;
+package com.teste.wk.Models.responses;
 
 import com.google.common.base.Objects;
 
-public class OrderByStateRequest {
+public class OrderByStateResponse {
     Long total;
     String estado;
 
-    public OrderByStateRequest() {
+    public OrderByStateResponse() {
     }
 
-    public OrderByStateRequest(Long total, String estado) {
+    public OrderByStateResponse(Long total, String estado) {
         this.total = total;
         this.estado = estado;
     }
@@ -34,7 +34,7 @@ public class OrderByStateRequest {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        OrderByStateRequest that = (OrderByStateRequest) o;
+        OrderByStateResponse that = (OrderByStateResponse) o;
         return Objects.equal(total, that.total) && Objects.equal(estado, that.estado);
     }
 

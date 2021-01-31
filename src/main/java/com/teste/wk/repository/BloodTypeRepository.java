@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BloodTypeRepository extends JpaRepository<BloodType,Integer> {
     BloodType findByTipo(String type);
+
 }

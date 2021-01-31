@@ -34,7 +34,6 @@ public class DataJsonServiceImpl implements DataJsonService {
         final File data = new File(file);
         final ObjectMapper mapper = new ObjectMapper();
         final TypeReference<List<DataJson>> typeReference = new TypeReference<List<DataJson>>(){};
-        InputStream inputStream = TypeReference.class.getResourceAsStream(file);
         try {
             List<DataJson> users = mapper.readValue(data,typeReference);
 
